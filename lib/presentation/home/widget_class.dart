@@ -2,22 +2,23 @@ import 'package:flutter/material.dart';
 
 class DrawerListTile extends StatelessWidget {
   late Icon icon;
+  late String textName;
 
-  DrawerListTile({super.key, required this.icon});
+  DrawerListTile({super.key, required this.icon, required this.textName});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(8),
       child: ListTile(
         leading: Icon(
           icon.icon,
           size: 25,
           color: Colors.black,
         ),
-        title: const Text(
-          'Episodes',
-          style: TextStyle(fontSize: 20),
+        title:  Text(
+          textName,
+          style: const TextStyle(fontSize: 20),
         ),
         onTap: (){},
       ),

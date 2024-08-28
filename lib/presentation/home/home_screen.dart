@@ -36,9 +36,11 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             DrawerListTile(
               icon: const Icon(Icons.smart_display_outlined),
+              textName: 'Episode',
             ),
             DrawerListTile(
               icon: const Icon(Icons.feedback_sharp),
+              textName: 'About',
             ),
           ],
         ),
