@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class DrawerListTile extends StatelessWidget {
-  late Icon icon;
-  late String textName;
+  Icon icon;
+  String textName;
 
   DrawerListTile({super.key, required this.icon, required this.textName});
 

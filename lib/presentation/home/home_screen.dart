@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'widget_class.dart';
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,6 +12,7 @@ class _HomeScreenState extends State<HomeScreen> {
           alignment: Alignment.centerRight,
           child: Padding(
             padding: EdgeInsets.only(right: 20),
+
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
